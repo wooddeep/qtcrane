@@ -1,0 +1,4 @@
+.QPushButton:pressed{ 
+	border:10px solid transparent;
+	border-image:url(:/image/box-shadow.png) 10 9 10 10 stretch ;
+}

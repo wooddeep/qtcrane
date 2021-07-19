@@ -1,0 +1,42 @@
+/* 普通按钮 */
+.QPushButton{
+	border-style: none;
+	border: 0px;
+	color: #F0F0F0;
+	padding: 5px;	
+	min-height: 20px;
+	border-radius:5px;
+	background: #1077B5; 
+}
+
+.QPushButton:pressed{ 
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5);
+}
+
+.QPushButton:hover{ 
+	background: #4F94CD;
+}
+
+/*
+QPushButton { background: #1077B5;}
+*/
+
+/* 关闭按钮 */
+QPushButton[type='close'] { 
+    color: #0c0c0c;
+    background: transparent; 
+}
+
+QPushButton[type='close']:hover { 
+    color: #F0F0F0;
+    background: #1077B5;
+}
+
+.QFrame{
+    background: #72777B;
+}
+
+QWidget[type='title'] {
+    color: #a1a3a6;
+    background: #a1a3a6;
+}

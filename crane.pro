@@ -32,6 +32,7 @@ SOURCES += \
 HEADERS += \
         mainwindow.h \
     craneoverlook.h
+
 FORMS += \
         mainwindow.ui \
     craneoverlook.ui
@@ -44,3 +45,10 @@ MOBILITY =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+SUBDIRS += \
+    crane.pro
+
+
+RESOURCES += \
+    res.qrc

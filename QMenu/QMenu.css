@@ -1,0 +1,13 @@
+QMenu {
+  background-color: white;
+  padding: 1px;  /* 缩小菜单项四个方向的padding */
+}
+
+QMenu::item{
+  background-color: transparent;
+}
+
+QMenu::item:selected{
+  background-color: rgb(234, 243, 253);
+  color: black;
+}

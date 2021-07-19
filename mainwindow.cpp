@@ -5,7 +5,7 @@
 #include "craneoverlook.h"
 
 MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
+    QWidget(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //this->layout()->addWidget(new CraneOverlook(this));
 
-    CraneOverlook *circle = new CraneOverlook(ui->anti_colli_show);
+    CraneOverlook *circle = new CraneOverlook(ui->cluster_show);
     circle->setMaximumWidth(100);
     circle->setMaximumHeight(100);
 
@@ -27,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     circle->move(100, 100);
 
-    CraneOverlook *circle1 = new CraneOverlook(ui->anti_colli_show);
+    CraneOverlook *circle1 = new CraneOverlook(ui->cluster_show);
     circle1->setMaximumWidth(100);
     circle1->setMaximumHeight(100);
 
